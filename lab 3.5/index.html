@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      * {
+       box-sizing: border-box;
+       margin: 0;
+      }
+
+      html{
+       height: 100%;
+       width: 100%;
+      }
+
+      body{
+        padding:0;
+        margin:0;
+        height: 100vh;
+        width: 100vw;
+        background-color:#fafafa;
+      }
+
+      #stories{
+        height:90px;
+        width:70vw;
+        margin-top:-5px;
+        border: 1px solid #b5b5b5;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius:2px;
+        padding-left: 30px;
+
+      }
+
+      .user{
+        display:inline-block;
+        width:18%;
+      }
+
+      .user p{
+        text-align:center;
+        margin:0;
+        font-weight: 100;
+        font-family: 'Lucida Sans Unicode';
+        font-size: smaller;
+      }
+
+      .post-header{
+        box-sizing: border-box;
+        height:50px;
+        width:inherit;
+        padding:5px;
+        border: 1px solid #b5b5b5;
+        background-colour: white;
+      }
+      
+
+    nav{
+      display: inline-block;
+      background-colour: white;
+      height: 54px;
+      width: 100vw;
+      border:1px solid #e5e5e5;
+    }
+
+    #logo{
+      height:40px;
+      position: relative;
+    }
+
+    /* must be 25px tall
+must be positioned relative to is parent
+must be have a width that spans 30% of the viewport width
+must be positioned 35vw to the left
+must be positioned 35vw to the right
+must be coloured #fafafa
+must have its text-centred
+must have a solid #b5b5b5 coloured 1px thick border rounded with a radius of 3px */
+
+    nav input{
+      height:25px;
+			position: absolute;
+			width: 30vw;
+			left: 35vw;
+      right: 35vw;
+      color: #fafafa;
+			border: 1px solid #b5b5b5;
+			text-align: center;
+
+    }
+
+  body > section.post > div.post-header > img {
+    border-radius: 50%;
+    height: 40px;
+    border: 2px double gainsboro;
+  }
+
+  body > section.post > div.post-header > span {
+    position: relative;
+    top: -20px;
+    left: 5px;
+  }
+
+
+    /* must be 40px tall
+must be positioned relative to is parent
+must be positioned 0px to the right of its parent
+ */
+    #actions{
+      height:40px;
+      position: absolute;
+      right: 0px;
+    }
+
+    /* Should have a 5px space on the top
+Should have a rounded border that is 50% of its parent in size
+Should have a double border 4px thick and coloured #b5b5b5
+Should be 56px wide
+Should be 56px tall
+Should be displayed as a block
+Should have an automatic spacing to the left of the element
+Should have an automatic spacing to the right of the element */
+
+    .user img{
+        margin-top: 5px;
+        border-radius: 50%;
+        border: 4px double #b5b5b5;
+        width: 56px;
+        height: 56px;
+        diplay: block;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+    	
+/* Should have a solid 1px border #b5b5b5 in colour
+Should have a rounded border with a curve of 2px
+Should have a height that is 60% of the viewport height
+Should have a width that is 560px wide
+Should have a 119px spacing to the left of the element
+Should have a 119px spacing to the right of the element
+Should have a 10px space above the element */
+  .post{
+    border: 1px solid #b5b5b5;
+    height: 580px;
+    width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+
+
+/* Should be coloured white
+Should be 50px tall
+Should be sized according to its border
+Should inherit its parents width
+Should have a spacing of 5px between its content and border
+Should have a 1px solid border on the bottom coloured #b5b5b5 */
+
+  .post-header{
+    background-color: white;
+    height: 50px;
+    box-sizing: border-box;
+    width: inherit;
+    padding: 5px;
+    border-bottom: 1px solid #b5b5b5;
+  }
+
+  body > section.post > div:nth-child(2) > img {
+    width: 100%
+  }
+  
+    </style>
+</head>
+<body>
+    <nav>
+       
+        <img id="logo" src="img/instagran.png" alt="instagran logo">
+    
+        <input type="text" placeholder="search"/>
+
+        <img id="actions" src="img/actions.png" alt="actions">
+    </nav>
+
+    <section id="stories">
+        <div class="user">
+            <img src="img/gran1.jpg" >
+            <p>Elma</p>
+        </div>
+        <div class="user">
+            <img src="img/gran2.jpg" >
+            <p>Betty</p>
+        </div>
+        <div class="user">
+            <img src="img/gran3.jpg" >
+            <p>Sandra</p>
+        </div>
+        <div class="user">
+            <img src="img/gran4.jpg" >
+            <p>Delores</p>
+        </div>
+
+        <div class="user">
+            <img src="img/gran5.jpg" >
+            <p>Karen</p>
+        </div>
+    </section>
+
+    <section class="post">
+        <div class="post-header">
+            <img src="img/gran1.jpg"><span>Elma</span>
+        </div>
+        <div>
+            <img class="post-image" src="https://www.placecage.com/g/512/512" alt="cage image">
+        </div>
+    </section>
+
+    <footer></footer>
+</body>
+</html>
